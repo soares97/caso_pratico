@@ -3,7 +3,7 @@ import Link from 'next/Link'
 export default function Navbar() {
     return (
         <nav>
-            <img src="/img2.png" width="100" height="50" alt="Imageme"></img>
+            
             <Link href="/utilizador">
                 <a>Utilizadores</a>
             </Link>
