@@ -1,7 +1,9 @@
+//Importes para utilizar os componentes "Link", "Layout" e "Title"
 import Link from 'next/link'
 import Layout from '../../componentes/layout';
 import Title from '../../componentes/title';
 
+//Função que renderiza os Utilizadores
 export default function Utilizadores({utilizadores}) {
     return (
         <Layout>
@@ -67,11 +69,16 @@ export default function Utilizadores({utilizadores}) {
     )
 }
 
-
+//Função de next.js que gerar os dados dos utilizadores estaticamente.
 export async function getStaticProps() {
+
+    //Acessando a rota especifica do utilizador na API "jsonplaceholder"
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
+
+    //Converter o returno para JSON
     const utilizadores = await response.json();
 
+    //Retornar o utilizador
     return {
         props: {
             utilizadores

@@ -1,7 +1,9 @@
+//Importes para utilizar os componentes "Image", "Layout" e "Title"
 import Layout from '../componentes/layout';
 import Title from '../componentes/title';
 import Image from 'next/image';
 
+//Função para renderizar a Página Home do Website
 export default function Home() {
     return (
 
@@ -13,14 +15,6 @@ export default function Home() {
             <div>
                 <h4 className="cardPersonalizado">Está Imagem foi implementado utilizando o componente "Image Optimization"</h4>
             </div>
-            <style jsx>
-                {`
-                .img {
-                    --border-radius: 10px;
-                    --background: red;
-                }
-            `}
-            </style>
         </Layout>
     )
 }

@@ -1,5 +1,7 @@
+//Importe do componente "Navbar"
 import Navbar from "./navbar";
 
+//Componente do "Layout"
 export default function Layout(props) {
     return (
         <div>

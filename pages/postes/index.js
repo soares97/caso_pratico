@@ -1,8 +1,10 @@
+//Importes para utilizar os componentes "Link", "Layout" e "Title"
 import Link from 'next/link';
 import React from 'react';
 import Layout from '../../componentes/layout';
 import Title from '../../componentes/title';
 
+//Função para gerar as postagens do lado do Cliente, atraves do Hook "React.useState([]);"
 export default function Postes() {
 
     const [postes, setPostes] = React.useState([]);
@@ -79,20 +81,3 @@ export default function Postes() {
     )
 }
 
-/*
-export async function getStaticPaths() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-    const postagem = await response.json();
-
-    const paths = postagem.map(postagem => {
-        return {
-            params: { id: `${postagem.id}` }
-        }
-    })
-
-    return {
-        paths,
-        fallback: false
-    }
-}
-*/

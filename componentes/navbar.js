@@ -1,5 +1,7 @@
+//Importe do componente "Link"
 import Link from 'next/link'
 
+//Componente de "Navbar"
 export default function Navbar() {
     return (
         <nav>
