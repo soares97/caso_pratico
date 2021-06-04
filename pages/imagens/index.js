@@ -81,7 +81,7 @@ export default function Imagens(props) {
             .card {
                 margin:1rem;
                 flex-basis: 45%;
-                height: 500px;
+                --height: 500px;
                 padding: 1.5rem;
                 color: black;
                 text-decoration: none;
@@ -106,6 +106,11 @@ export default function Imagens(props) {
                 margin: 0;
                 font-size: 1.25rem;
                 line-height: 1.5;
+            }
+
+            a {
+                display: block;
+                position: relative;
             }
             
             `}
